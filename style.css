@@ -1,0 +1,385 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.navbar{
+width: 1400px;
+height: 66px;
+background-color: whitesmoke;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: fixed;
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+}
+.navbar .menu li{
+    margin-right: 4rem;
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.navbar .menu li a{
+    color: black;
+}
+.navbar li a:hover{
+    color: mediumblue;
+}
+.menu #logo{
+    margin-left: 6rem;
+}
+.navbar .sub-menu{
+    display: flex;
+    align-items: center;
+}
+.navbar .sub-menu li{
+    margin-left: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.navbar .sub-menu li a{
+    color:darkslategrey
+}
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar .sub-menu li:nth-child(4){
+    margin-left: 3rem;
+}
+
+.main-banner{
+    width: 100%;
+    height: 590px;
+    background-image: url(image/vr.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-banner .banner-content{
+    text-align: center;
+}
+.main-banner h2{
+    font-size: 2.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: thin;
+    color: white;
+    margin-bottom: 2rem;
+}
+.main-banner p{
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:300;
+    color: white;
+}
+.main-banner .btn{
+    width: 11.8rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border: none;
+    color:rgb(9, 113, 237);
+    transition: all 0.5s;
+    
+}
+.main-banner .btn:hover{
+    background-color: rgb(9, 113, 237);
+    color: white;
+}
+.games{
+    width: 100%;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly
+    
+}
+.games .game-box{
+    width: 190px;
+    height: 130px;
+    background-color: blue;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.games .game-box:hover{
+    opacity: 0.7;
+}
+.games .game-box img{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.banner-ad{
+    background-color: yellow;
+    position: relative;
+    width: 100%;
+    height:630px ;
+    background-image: url(image/soccer_bg.jpg);
+}
+.banner-ad img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.banner-ad .ad-content{
+    position: absolute;
+    top: 120px;
+    left: 165px;
+
+}
+.banner-ad .ad-content h2{
+    font-size: 2.8rem;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.banner-ad .ad-content p{
+    margin-top: 40px;
+    margin-bottom: 55px;
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 2.5rem;
+}
+.banner-ad .ad-content .ad-btn{
+    width: 11.8rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    transition: all 0.5s;
+}
+.banner-ad .ad-content .ad-btn:hover{
+    background-color: rgb(9, 113, 237);
+    color: white;
+}
+.pls-intro{
+    height: 1080px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    
+}
+.pls-intro .pls-title{
+    margin-top: 164px;
+}
+.pls-intro .pls-title p{
+    font-size: 1.43rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+    
+}
+.pls-intro .pls-title h2{
+    font-size: 3.4rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 52px;
+
+}
+.pls-intro .pls-console{
+    margin-left: 13.3rem;
+    margin-top: 140px;
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.pls-intro .pls-content{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: left;
+    position: relative;
+    margin-top: 110px;
+    
+}   
+.pls-intro .pls-content h3{
+    font-size: 1.8rem;
+    margin-left: 45px;
+}
+.pls-intro .pls-content p{
+    font-size: 1.4rem;
+    margin-left: 45px;
+    line-height: 2rem;
+}
+.pls-intro .pls-content .console-btn{
+    font-size: 1.3rem;
+    position: absolute;
+    padding: 0.6rem 1.8rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0 ,-50%);
+
+    border-radius: 50px;
+    background-color: mediumblue;
+    color: white;
+    border: none;
+}
+.pls-intro .console-box{
+    width: 150px;
+    height: 710px;
+    position: absolute;
+    right: 165px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.pls-intro .console-box .console-photo{
+    width: 120px;
+    height: 115px;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.pls-intro .console-box .console-photo:hover{
+    border: 3px solid blue;
+    
+}
+.pls-intro .console-box .console-photo img{
+    width: 100%;
+}
+.game-intro{
+    width: 100%;
+    height: 510px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+}
+.game-intro .game-info{
+    height: 100%;
+    width: 585px;
+    position: relative;
+}
+.game-intro .game-info h2{
+    font-size: 1.875rem;
+    padding-left: 80px;
+    padding-top: 115px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+.game-intro .game-info p{
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-left: 80px;
+    font-size: 1.3rem;
+    margin-top: 50px;
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+    color: white;
+}
+.game-intro .game-info a{
+    padding-right: 10px;
+}
+.game-intro .game-info #ps5-icon{
+    padding-left: 80px ;
+}
+.game-intro .game-photo{
+    width: 815px;
+    height: 100%;
+   background-color: salmon;
+   overflow: hidden;
+   background-position: center center;
+}
+.game-intro .game-photo img{
+    width: 100%
+}
+.new-game{
+    height: 590px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.new-game h2{
+    font-size: 2.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: 35px;
+}
+.new-game .btns{
+    margin: 0 auto;
+}
+.new-game .btns .newgame-btn{
+    background-color: blue;
+    color: white;
+    font-size: 1.14rem;
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    border: none;
+}
+.new-game .btns #newgame-btns{
+    border-radius: 50px;
+    border: 1px solid blue;
+    background-color: transparent;
+    padding: 0.4rem 1rem;
+    font-size: 1.14rem;
+}
+.new-game .newgame-box{
+    margin-top: 80px;
+    width: 1240px;
+    height: 230px;
+    display: flex;
+    justify-content:space-between
+}
+.new-game .newgame-box .newgame-photo{
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+}
+.new-game .newgame-box .newgame-photo img{
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    height: 480px;
+    background-color: mediumblue;
+    margin-top: 20px;
+    display: flex;
+}
+.footer .company{
+    width: 585px;
+    height: 100%;
+}
+.footer .company #play-logo{
+    margin-top: 5.43rem;
+    margin-left: 10.5rem;
+}
+.footer .company p{
+    font-size: 0.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5rem;
+    margin-left: 10.3125rem;
+    color: white;
+}
+.footer .rule{
+    display: flex;
+    align-items: center;
+}
+.footer .rule .rule-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 125px;
+    height: 180px;
+    margin-right: 80px;
+    
+}
+.footer .rule .rule-box a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
